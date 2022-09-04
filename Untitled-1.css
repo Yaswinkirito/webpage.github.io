@@ -1,0 +1,96 @@
+h1{
+    
+font-size: 50px;
+text-align: center;}
+a{
+    text-decoration: none;
+    color: rgba(0,0,0,.87);
+    font-family: arial,sans-serif;
+    position: relative;
+    right: 0px;
+    top: 0px;
+    text-align: end;
+
+}
+.footer
+{
+    width: auto;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+
+    
+
+}
+a:hover{
+    text-decoration: underline;
+}
+.searchbox {
+    background-color:  #FFFF;
+    border: solid;
+    border-radius: 22px;
+    color:black;
+    font-family: arial,sans-serif;
+    font-size: 25px;
+    
+    outline: transparent;
+    border-style: outset;
+    text-align: center;
+    height: 44px;
+    width: 500px;
+    
+    position: relative;
+
+}
+body{
+    
+    -ms-flex-align: center;
+    position: relative;
+    text-align: center;
+}
+.center{
+    padding-top: 100px;
+    
+
+}
+input[type="submit"]{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    }
+.search{
+    border-radius: 22px;
+    border-color: black;
+   
+    margin: 5px;
+    font-size: larger;
+    
+}
+.coloumn
+{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+form > div
+{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.images{
+    height: 40px;
+    width: 80px;
+}
