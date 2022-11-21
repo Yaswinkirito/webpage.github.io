@@ -5,48 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./bootstrap.bundle.js"></script>
     <link href="./bootstrap.css" rel="stylesheet">
-    <script src="./bootstrap.js"></script>
-    
+    <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-primary" >
-    <a class="navbar-brand btn btn-outline-dark text-white" href="./login.html">Login</a>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0c111b;">
+    <button class="navbar-brand btn btn-outline-dark text-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="border:solid;white; border-width: 2px; margin:1px;">
+      Menu
+    </button>
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon bg-white" style="border: solid white; border-radius: 2px; border-width: 1px;"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
+        <div></div>
         <li class="nav-item active">
-          <a class="nav-link btn btn-outline-dark my-2 my-sm-2 text-white" href="#">Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-dark my-2 my-sm-2 text-white" href="./login.html">sign in</a>
+          <a class="nav-link my-2 my-sm-2 text-white item" href="#">Home </a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle btn btn-outline-dark my-2 my-sm-2 text-white" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link dropdown-toggle btn btn-outline-dark my-2 my-sm-2 text-white" href="" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Dropdown
           </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
+          <div class="dropdown-menu" style="border: none;" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item btn-dark" href="./python.html">Action</a>
             <a class="dropdown-item" href="#">Another action</a>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </li>
-    
+        
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <li class="nav-item active">
+          <a class="btn btn-primary " style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</a>
+        </li>
+      </ul>
+      <div style="margin-left: 40%;"><form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2 search-box1 right-container1" style="background:white;" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-dark my-2 my-sm-0 text-white" type="submit" >Search</button>
-      </form>
+      </form></div>
+      
     </div>
   </nav>
-<button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop" style="margin:1px;">
-    Menu
-  </button>
+
   <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="staticBackdropLabel">Menu</h5>
@@ -56,7 +61,7 @@
       <div>
         <table class="table table-hover text-dark">
           <tbody>
-            <tr><th><a href="./sct.html" style="text-decoration: none; color: black;">Super Conducting Transistor</a></th></tr>
+            <tr><th><a href="./sct.html" style="text-decoration: none; color: black;">Full-stack</a></th></tr>
             <tr><th><a href="./plant.html" style="text-decoration: none; color: black;">Plants</a></th></tr>
             <tr><th><a href="./food.html" style="text-decoration: none; color: black;">Food</a></th></tr>
             <tr><th><a href="./space.html" style="text-decoration: none; color: black;">Space Vacations</a></th></tr>
@@ -68,7 +73,7 @@
   </div>
     
   <div class="container">
-    <p class="display-1 text-center">Welcome to The Future</p>
+    <p class="display-1 text-center">Learn Hub</p>
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner text-center">
         <div class="carousel-item active">
@@ -84,14 +89,22 @@
     </div>
     <div class="container" style="font-size: 20px;">
     <p class="text-justify" style="margin-top: 200px ;">
-      We all dream of the future flying cars, large awe-inspiring buildings, jetpacks, space vacations are some of the images that into pop our mind. Most of them we owe to the science fiction films and novels that we grew up with, but it has been a question that plagued us since time immemorial. In the 20th writers with their incredible imagination have written stories about how the 21st century will look like but what it really looked like was beyond any person thought at that time, if you asked your parents and grandparents if they ever imagined if the present-day tech was possible most of them would say “No”.
-
+     
     </p>
     <p class="text-justify" >
-      During the last few decades since the dawn of the information age the technological growth have been mind boggling and even now new innovations are being made day by day which sometimes makes us reconsider our common sense till then. Here I would like to introduce to the reader some of the newer innovations that occurred during the last few decades. Plant based tech such as cloud storage, Grown furniture, Bioluminescent trees, Super conducting diode, Cultured meat, Civilian Space Vacations industries and Quantum Computing.
+      Looking for places to learn, here we have various recommendations for you needs be it
+      <ul>
+        <li>Full-stack</li>
+        <li>Python</li>
+        <li>Game Development</li>
+        <li>Iots</li>
+        <li>Techfests</li>
+        <li>Internships</li>
+      </ul>
     </p>
     </div>
 
-  </div><script src="./bootstrap.js"></script>
+ </div> 
+
 </body>
 </html>
